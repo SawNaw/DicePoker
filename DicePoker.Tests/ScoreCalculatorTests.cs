@@ -22,10 +22,11 @@ namespace DicePoker.Tests
         [Fact]
         public void Straight_Gets50Points()
         {
+            // The ordered dice rolls are 1, 2, 3, 4, which is a straight.
             var diceRoll1 = GetDiceRollWithResult(1);
-            var diceRoll2 = GetDiceRollWithResult(2);
-            var diceRoll3 = GetDiceRollWithResult(3);
-            var diceRoll4 = GetDiceRollWithResult(4);
+            var diceRoll2 = GetDiceRollWithResult(4);
+            var diceRoll3 = GetDiceRollWithResult(2);
+            var diceRoll4 = GetDiceRollWithResult(3);
 
             var sut = new ScoreCalculator(diceRoll1,
                                           diceRoll2,

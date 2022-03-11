@@ -38,9 +38,9 @@ namespace DicePoker.Core
 
         private bool HasStraight()
         {
-            return diceRoll1.Result == diceRoll2.Result - 1
-                && diceRoll2.Result == diceRoll3.Result - 1
-                && diceRoll3.Result == diceRoll4.Result - 1;
+            return allDiceRolls.ElementAt(0).Result == allDiceRolls.ElementAt(1).Result - 1
+                && allDiceRolls.ElementAt(1).Result == allDiceRolls.ElementAt(2).Result - 1
+                && allDiceRolls.ElementAt(2).Result == allDiceRolls.ElementAt(3).Result - 1;
         }
 
         private bool Has3OfAKind()
