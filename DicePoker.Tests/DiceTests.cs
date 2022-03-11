@@ -17,7 +17,7 @@ namespace DicePoker.Tests
             var dice = new Dice();
 
             // Roll the dice a lot of times to ensure that every number is generated.
-            for (int i = 0; i < 99999; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 var result = dice.Roll();
                 rolls.Add(result.Result);
