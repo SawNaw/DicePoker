@@ -1,5 +1,5 @@
 using Xunit;
-using DicePoker;
+using DicePoker.Core;
 using Moq;
 
 namespace DicePoker.Tests

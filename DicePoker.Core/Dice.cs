@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DicePoker
+namespace DicePoker.Core
 {
-    internal class Dice
+    public class Dice
     {
         public IDiceRollResult Roll()
         {
-            return new DiceRollResult(new Random().Next(1, 6));
+            return new DiceRollResult(new Random().Next(1, 7));
         }
     }
 }
